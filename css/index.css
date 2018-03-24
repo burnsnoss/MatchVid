@@ -1,0 +1,16 @@
+body, html {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+iframe {
+	height: 100%;
+	width: 100%;
+	border: none;
+}
+
+.navbar {
+	background-color: #000000;
+	color: #64E764;
+}
