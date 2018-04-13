@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <title>MatchVideo</title>
 
@@ -38,7 +38,43 @@
       </div>
     </nav>
 
-    <iframe src="http://www.squirrelsonmyporch.us" width="100%" height="100%"></iframe>
+    <!-- Login modal -->
+    <div class="modal fade" 
+        id="login-modal"
+        tabindex="-1" role="dialog" 
+        aria-labelledby="login-modal-label" 
+        aria-hidden="true"
+        data-backdrop="static">
+      <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header"> 
+            <h5>Login</h5>
+          </div>
+          
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label class="col-form-label">E-Mail or Username:</label>
+                <input type="text" class="form-control" id="username-input">
+              </div>
+              <div class="form-group">
+                <label class="col-form-label">Password:</label>
+                <input type="text" class="form-control" id="password-input">
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="login-button">
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Viewer iframe -->
+    <iframe src="" width="100%" height="100%" id="viewer"></iframe>
 
     <!-- jQuery -->
     <script
@@ -49,6 +85,6 @@
     <!-- Bootstrap JS -->
     <script src="bootstrap-4.0.0/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
-    <script src="js/scripts.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
   </body>
 </html>
