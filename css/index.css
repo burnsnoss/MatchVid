@@ -18,5 +18,10 @@ iframe {
 .btn-primary {
 	background-color: #000000;
 	color: #64E764;
-	border-color: #64E764;
+	border-color: #74E774;
+}
+
+.btn-primary:hover {
+	background-color: #222222;
+	border-color: #74E774;
 }
